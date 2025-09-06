@@ -86,3 +86,15 @@
         margin-right: 5px;
     }
 }
+
+@media (min-width: 896px) {
+    .logo {
+        width: 12rem;
+    }
+    .menu__link {
+        font-size: 1rem;
+    }
+    .btn-login {
+        font-size: 1rem;
+    }
+}

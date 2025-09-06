@@ -9,6 +9,10 @@
     margin: 1.5rem;
 }
 
+.footer__social a {
+    text-decoration: none;
+}
+
 .footer__social img {
     padding: 0.8rem;
 }
