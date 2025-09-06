@@ -36,17 +36,15 @@
     font-weight: 500;
 }
 
+.beneficios {
+    padding: 2rem 0;
+}
+
 .beneficios__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10rem 0;
     color: var(--cor-principal);
-}
-
-.beneficios__content {
-    max-width: 40%;
-    margin: 0 6rem
 }
 
 .beneficios__content h2 {
@@ -146,7 +144,7 @@ span {
    transition: 0.3s ease;
 }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 375px) and (max-width: 667px) {
     .banner {
         height: min(320px, 768px);
     }
@@ -158,11 +156,11 @@ span {
         font-size: 3vw;
     }
     .beneficios__container {
-        margin: 1rem auto;
         text-align: center;
     }
     .beneficios__content {
-        max-width: 80%;
+        width: 80%;
+        margin: 0 auto;
     }
     .beneficios__imagem {
         display: none;
