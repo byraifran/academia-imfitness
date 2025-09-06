@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('./header.css');
+@import url('/src/css/main.css');
+@import url('./footer.css');
+:root {
+    --fonte-principal: "Inter", sans-serif;
+    --fonte-secundaria: "Fjalla One", sans-serif;
+    --cor-destaque: #07B2D9;
+    --cor-complementar: #03A696;
+    --dark-mode: #262626;
+    --light-mode: #F2F2F2;
+    --cor-principal: #fff;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   font-family: var(--fonte-principal);
+   font-size: 1rem;
+   line-height: 1.5;
+   background-color: var(--dark-mode);
+}
+@media (min-width: 320px) and (max-width: 425px) {
+    
+}

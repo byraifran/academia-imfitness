@@ -1,0 +1,203 @@
+.banner__container {
+    position: relative;
+    max-width: 100%;
+}
+
+.banner {
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: min(768px, 1200px);
+}
+
+.banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--cor-principal);
+    text-shadow: 6px 3px 18px #000000;
+    text-align: center;
+}
+
+.banner__content h2 {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-destaque);
+    font-size: 4rem;
+    text-shadow: 6px 3px 18px #000000;
+
+}
+
+.banner__content p {
+    font-size: 1.5rem;
+    text-shadow: 6px 3px 18px #000000;
+    font-weight: 500;
+}
+
+.beneficios__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem 0;
+    color: var(--cor-principal);
+}
+
+.beneficios__content {
+    max-width: 40%;
+    margin: 0 6rem
+}
+
+.beneficios__content h2 {
+    font-size: 3.5rem;
+    color: var(--cor-destaque);
+    padding: 1rem 0;
+    font-family: var(--fonte-secundaria);
+    text-align: center;
+}
+
+.beneficios__imagem img {
+    width: 80%;
+    border-radius: 1rem;
+}
+
+.planos__descricao {
+    color: var(--cor-principal);
+    text-align: center;
+}
+
+.planos__descricao h3 {
+    font-size: 2.5rem;
+    color: var(--cor-destaque);
+    font-family: var(--fonte-secundaria);
+}
+
+.planos__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin: 4rem auto;
+    max-width: 100%;
+}
+
+.card {
+    background-color: var(--cor-principal);
+    max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+.card:hover {
+    scale: 1.1;
+    transition: 0.4s ease-in-out;
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.card-valor {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+span {
+    margin: 0.6rem;
+}
+
+.btn-card {
+    border: 2px solid var(--cor-destaque);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 0.8rem;
+    color: var(--cor-destaque);
+    font-weight: 600;
+    margin: 0.8rem;
+    cursor: pointer;
+}
+
+.plus {
+    background-color: var(--cor-complementar);
+    color: var(--cor-principal);
+}
+
+.plus-valor {
+    color: #262626;
+}
+
+.btn-plus {
+    background-color: #262626;
+    color: var(--cor-principal);
+    border: none;
+}
+
+.btn-plus:hover {
+   background-color: var(--cor-principal);
+   color: var(--cor-destaque);
+   transition: 0.3s ease;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .banner {
+        height: min(320px, 768px);
+    }
+    .banner__content h2 {
+        font-size: 6vw;
+        text-wrap: nowrap;
+    }
+    .banner__content p {
+        font-size: 3vw;
+    }
+    .beneficios__container {
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .beneficios__content {
+        max-width: 80%;
+    }
+    .beneficios__imagem {
+        display: none;
+    }
+    .beneficios__content h2 {
+        font-size: 6vw;
+        text-wrap: nowrap;
+    }
+    .beneficios__content p {
+        font-size: 3.5vw;
+    }
+    .planos__descricao h3 {
+        font-size: 6vw;
+    }
+    .planos__descricao p {
+        font-size: 3.5vw;
+        text-wrap: wrap;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    .planos__cards {
+        flex-direction: column;
+        gap: 1rem;
+        margin: 2rem auto;
+    }
+    .card {
+        flex-shrink: 3;
+    }
+    .card h4 {
+        font-size: 1rem;
+    }
+    span {
+        font-size: .8rem;
+    }
+    .card-valor {
+        font-size: 1rem;
+    }
+}

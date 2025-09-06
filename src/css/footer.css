@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-principal);
+}
+
+.footer__social {
+    margin: 1.5rem;
+}
+
+.footer__social img {
+    padding: 0.8rem;
+}
+
+.footer__social img:hover {
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer__social {
+        margin: 1rem;
+    }
+    .footer div {
+        font-size: .5rem;
+    }
+}
